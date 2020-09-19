@@ -27,8 +27,8 @@ export class ProductComponent {
     const { error } = await stripe.redirectToCheckout({
       mode: 'payment',
       lineItems: [{ price: this.priceId, quantity: this.quantity }],
-      successUrl: `${window.location.origin}/success`,
-      cancelUrl: `${window.location.origin}/failure`,
+      successUrl: `${window.location.href}/success`,
+      cancelUrl: `${window.location.href}/failure`,
     });
     // If `redirectToCheckout` fails due to a browser or network
     // error, display the localized error message to your customer
