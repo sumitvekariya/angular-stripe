@@ -1,11 +1,11 @@
 .container {
     background: #aedaa6 !important;
-    position: absolute;
+    position: fixed;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     .card {
-    
-    width: 650px;
+    display: flex;
+    width: auto;
     // height: 375px;
     position: absolute;
     background: white;
