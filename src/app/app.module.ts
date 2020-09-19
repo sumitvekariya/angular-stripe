@@ -33,7 +33,7 @@ import { RouterModule } from '@angular/router';
         path: '**',
         component: ProductComponent
       }
-    ])
+    ], { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
